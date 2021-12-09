@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0;}
+        #page { width: 800px; margin: 0 auto;}
+        header { background-color: orange; text-align: center; color: white}
+        
+        footer { background-color: violet; text-align: center; color: white}
+        #main { overflow: hidden;}
+        aside, section { float: left; }
+        aside { border: 1px solid blue; width: 150px; width: 150px; height: 400px;}
+        section { border: 1px solid orange; width: 650px; min-height: 600px; text-align: center;}
+        nav ul { list-style: none; overflow: hidden; background-color: #222222; border-radius: 5px;}
+        nav ul li { float: left; width: 150px;}
+        nav ul li a {
+            display: block; color: #dddddd; background-color: #222222; text-decoration: none;
+            height: 35px; line-height: 35px; text-align: center;
+        }
+        nav ul li a:hover {
+            color: #ffffff; background-color: #000000; 
+        }
+
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        table { width: 90%; margin: 0 auto;}
+        th, td { height: 50px;}
+        td a {
+            font-size: 0.8em;
+            color: white;
+            background-color: cornflowerblue;
+            width: 120px;
+            display: inline-block;
+            text-decoration: none;
+            height: 35px;
+            line-height: 35px;
+            border-radius: 20px;
+        }
+        td a:hover {
+            color: darkgray;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <header>
+            머리말입니다
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </nav>
+        <div id="main">
+            <aside>
+                왼쪽 메타 데이터
+            </aside>
+            <section>
+                <h1>★ 영어회화 수강 안내 ★</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>수강 레벨</th><th>코스A</th><th>코스H</th><th>수강기간</th><th>세부내용보기</th>
+                        </tr>
+                        <tr>
+                            <td>Level 1</td>
+                            <td>Side by Side 1</td>
+                            <td>American Headway 1</td>
+                            <td>1개월</td>
+                            <td><a href='#'>세부내용 보기</a></td>
+                        </tr>
+                        <tr>
+                            <td>Level 2</td>
+                            <td>Side by Side 2</td>
+                            <td>American Headway 2</td>
+                            <td>1개월</td>
+                            <td><a href='#'>세부내용 보기</a></td>
+                        </tr>
+                        <tr>
+                            <td>Level 3</td>
+                            <td>Side by Side 3</td>
+                            <td>American Headway 3</td>
+                            <td>1개월</td>
+                            <td><a href='#'>세부내용 보기</a></td>
+                        </tr>
+                        <tr>
+                            <td>Level 4</td>
+                            <td colspan="2">Exploring English 1</td>
+                            <td>2개월</td>
+                            <td><a href='#'>세부내용 보기</a></td>
+                        </tr>
+                        <tr>
+                            <td>Level 5</td>
+                            <td colspan="2">Exploring English 2</td>
+                            <td>2개월</td>
+                            <td><a href='#'>세부내용 보기</a></td>
+                        </tr>
+                    </thead>
+                </table>
+            </section>
+        </div>
+        <footer>
+            꼬리말입니다
+        </footer>
+    </div>
+</body>
+</html>

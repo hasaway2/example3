@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* { box-sizing: border-box; margin: 0; padding: 0;}
+        #page { width: 800px; margin: 0 auto;}
+        header { background-color: orange; text-align: center; color: white}
+        footer { background-color: violet; text-align: center; color: white}
+        #main { overflow: hidden;}
+        #left, section, #right { width: 150px; float: left; }
+        aside { border: 1px solid blue; width: 150px; height: 400px;}
+        section { border: 1px solid orange; width: 500px; min-height: 600px; text-align: center;}
+        nav ul { list-style: none; overflow: hidden; background-color: #222222; border-radius: 5px;}
+        nav ul li { float: left; width: 150px;}
+        nav ul li a {
+            display: block; color: #dddddd; background-color: #222222; text-decoration: none;
+            height: 35px; line-height: 35px; text-align: center;
+        }
+        nav ul li a:hover {
+            color: #ffffff; background-color: #000000; 
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <header>
+            머리말입니다
+        </header>
+        <nav id='nav'>
+            <ul>
+                <li><a href='#'>HOME</a></li>
+                <li><a href='#'>사원 소개</a></li>
+                <li><a href='#'>사업 분야</a></li>
+                <li><a href='#'>고객 센터</a></li>
+            </ul>
+        </nav>
+        <div id="main">
+            <aside id='left'>
+                왼쪽 메타 데이터
+            </aside>
+            <section>
+                <div>
+                    <div>
+                        <div>
+                            <img src="image/tutor_01.png">
+                        </div>
+                        <div>
+                            <h1>김경선 교수</h1>
+                            <div>
+                                <h2>전문분야</h2>
+                                <p>R분석, 하둡, 파이썬, 인공지능, 몽고디비, Django, Oracle, Java, Java
+                                    Framework, JSP, Flex&Ajax, Android, HTML5/CSS3, JavaScript, Real
+                                    Project, Machine Learning, 데이터분석 및 시각화</p>
+                            </div>
+                        </div>
+                        <a href="http://www.iedu.or.kr/default/m1/menu5.php">참조 페이지</a>
+                    </div>
+                </div>
+            </section>
+            <aside id='right'>
+                오른쪽 메타 데이터
+            </aside>
+        </div>
+        <footer>
+            꼬리말입니다
+        </footer>
+    </div>
+</body>
+</html>
